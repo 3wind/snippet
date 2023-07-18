@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>error handler</title>
+    <link rel="stylesheet" href="../css/error-handler.css">
+    <script src="../js/error-handler.js"></script>
+    <script>
+      function test(err) {
+        console.log("test err", err);
+        throw new Error(err);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="noVNC_fallback_error" class="noVNC_center">
+      <div>
+        <div>noVNC encountered an error:</div>
+        <br />
+        <div id="noVNC_fallback_errormsg"></div>
+      </div>
+    </div>
+    <div>
+      <button onclick="test('error1')">show error1</button>
+      <button onclick="test('error2')">show error2</button>
+      <button onclick="test('error3')">show error3</button>
+    </div>
+  </body>
+</html>
