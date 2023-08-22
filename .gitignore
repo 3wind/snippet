@@ -1,0 +1,24 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+#忽略.vscode下文件，但保留用户片段
+!.vscode
+.vscode/*
+!.vscode/*.code-snippets
+
+#忽略.static下noVnc文件
+.static/*
+
+python
